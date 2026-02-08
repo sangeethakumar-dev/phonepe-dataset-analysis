@@ -13,9 +13,9 @@ agg_state_list=os.listdir(agg_trans_path)
 col_names={'State':[],
       'Year':[],
       'Quarter':[],
-      'Transacion_type':[],
-      'Transacion_count':[],    
-      'Transacion_amount':[]}
+      'Transaction_type':[],
+      'Transaction_count':[],    
+      'Transaction_amount':[]}
 
 #We have to extract data from only aggregated-->transaction,insurance,user (state level)
 
@@ -44,9 +44,9 @@ for state in agg_state_list:
                 name=i['name']
                 count=i['paymentInstruments'][0]['count']
                 amount=i['paymentInstruments'][0]['amount']
-                col_names['Transacion_type'].append(name)
-                col_names['Transacion_count'].append(count)
-                col_names['Transacion_amount'].append(amount)
+                col_names['Transaction_type'].append(name)
+                col_names['Transaction_count'].append(count)
+                col_names['Transaction_amount'].append(amount)
                 col_names['State'].append(state)
                 col_names['Year'].append(year)
                 col_names['Quarter'].append(int(quarter.strip('.json')))
