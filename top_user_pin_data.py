@@ -40,7 +40,7 @@ for state in top_state_list:
                 col_names['Year'].append(year)
                 col_names['Quarter'].append(int(quarter.strip('.json')))
                 col_names['Pincode'].append(i['name'])
-                col_names['Registered_Users'].append(['registeredUsers'])
+                col_names['Registered_Users'].append(i['registeredUsers'])
 
 #Done extracting the  top-->user data -->pincode
 
