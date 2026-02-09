@@ -34,23 +34,26 @@ for state in agg_state_list:
             except:
                 continue
             
+
             user=D['data']['aggregated']['registeredUsers']
             appopens=D['data']['aggregated']['appOpens']
+           
             devices = D['data'].get('usersByDevice')
-            if devices is not None:
+            
+            if devices :
                 for i in devices:
-                    brand=i['brand']
+                    brand=i['brand']    
                     count=i['count']
                     percentage=i['percentage']
-                col_names['Registered_Users'].append(user)
-                col_names['App_Opens'].append(appopens)
-                col_names['Device_Brand'].append(brand)
-                col_names['Device_Count'].append(count)
-                col_names['Device_Percentage'].append(percentage)
-                col_names['State'].append(state)
-                col_names['Year'].append(year)
-                col_names['Quarter'].append(int(quarter.strip('.json')))
-
+                    col_names['State'].append(state)
+                    col_names['Year'].append(year)
+                    col_names['Quarter'].append(int(quarter.strip('.json')))
+                    col_names['Registered_Users'].append(user)
+                    col_names['App_Opens'].append(appopens)
+                    col_names['Device_Brand'].append(brand)
+                    col_names['Device_Count'].append(count)
+                    col_names['Device_Percentage'].append(percentage)
+                  
 #Done extracting the state level user data 
 
 #Now lets convert that into data frame
