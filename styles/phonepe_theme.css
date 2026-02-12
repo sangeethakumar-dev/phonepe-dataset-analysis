@@ -1,0 +1,101 @@
+/* App background */
+.stApp {
+    background-color: #ffffff;
+    color: #262730;
+}
+
+/* Sidebar background */
+section[data-testid="stSidebar"] {
+    background-color: #F5F0FA;
+}
+
+/* Sidebar text */
+section[data-testid="stSidebar"] * {
+    color: #262730;
+}
+
+/* Headers */
+h1, h2, h3 {
+    color: #5F259F !important;
+    font-weight: 700;
+}
+
+/* Buttons (REAL selector) */
+button[kind="primary"] {
+    background-color: #5F259F !important;
+    color: white !important;
+    border-radius: 8px !important;
+    border: none !important;
+}
+
+button[kind="primary"]:hover {
+    background-color: #4A1E80 !important;
+}
+
+/* Selectbox & input borders */
+div[data-baseweb="select"] > div {
+    border-radius: 8px;
+}
+
+/* Metric values */
+div[data-testid="stMetricValue"] {
+    color: #5F259F !important;
+    font-weight: 700;
+}
+
+/* Metric labels */
+div[data-testid="stMetricLabel"] {
+    color: #262730;
+}
+
+/* Remove excessive top padding */
+.block-container {
+    padding-top: 2rem;
+}
+
+
+/* Selectbox container */
+div[data-baseweb="select"] > div {
+    background-color: #ffffff !important;
+    border: 1.5px solid #5F259F !important;
+    border-radius: 8px !important;
+}
+
+/* Selected value text */
+div[data-baseweb="select"] span {
+    color: #262730 !important;
+    font-weight: 500;
+}
+
+/* Dropdown arrow */
+div[data-baseweb="select"] svg {
+    color: #5F259F !important;
+}
+
+/* Dropdown menu */
+ul[role="listbox"] {
+    background-color: #ffffff !important;
+    border: 1px solid #5F259F !important;
+}
+
+/* Dropdown options */
+li[role="option"] {
+    color: #262730 !important;
+}
+
+/* Hover option */
+li[role="option"]:hover {
+    background-color: #F5F0FA !important;
+    color: #5F259F !important;
+}
+
+/* Make selectbox label look premium */
+label {
+  font-weight: 600 !important;
+  color: #5F259F !important;
+}
+
+/* Focus effect when dropdown is clicked */
+div[data-baseweb="select"] > div:focus-within {
+  box-shadow: 0 0 0 2px rgba(95, 37, 159, 0.25) !important;
+}

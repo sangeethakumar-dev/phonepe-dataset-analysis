@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#5F259F"              # PhonePe Purple
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F5F0FA" # Light lavender
+textColor = "#262730"
+font = "sans serif"
